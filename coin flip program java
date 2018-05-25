@@ -1,0 +1,23 @@
+// coin flip program in java
+
+
+
+var flips = prompt("Please enter the times you want to flip a coin", "Number goes here");
+
+var h = 0;
+var t = 0;
+for (i = 0; i < flips; i++) {
+   var num = Math.floor(Math.random() * 100);
+   if(num > 50){
+     h++;
+   }
+   if (num <= 50){
+    t++;
+   }
+}
+if (flips != null) {
+  console.log("Total coin flips: " + flips);
+  console.log("====================");
+  console.log("Heads " + h);
+  console.log("Tails " + t);
+}
