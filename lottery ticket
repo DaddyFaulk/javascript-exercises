@@ -1,0 +1,17 @@
+// detects if ticket numbers are a winner
+
+
+
+function greenTicket(a, b, c) {
+  
+if(a == b)
+	{
+		if(b == c)
+			return 20;
+		return 10;
+	}
+	if(a == c || b == c)
+		return 10;
+return 0;
+  
+}
