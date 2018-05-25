@@ -1,0 +1,28 @@
+// returns the length of the shortest word
+
+
+function findMinLengthOfThreeWords(word1, word2, word3) {
+  // your code here
+  
+  //concat strings into one string with spaces
+  var concatString = word1.concat(" "+ word2 + " " + word3);
+  console.log(concatString);
+  
+  //convert string into an array of three strings
+  var stringArray = concatString.split(" ");
+  console.log(stringArray);
+  
+  var smallest = stringArray[0];
+  
+  for(var i = 0; i < stringArray.length; i++){
+    //compare lengths
+    if(stringArray[i].length < smallest.length){
+      smallest = stringArray[i];
+    }
+  }
+  return smallest.length;
+}
+
+
+var output = findMinLengthOfThreeWords('a','be','see');
+console.log(output);
