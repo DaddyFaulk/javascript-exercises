@@ -1,0 +1,25 @@
+//gives letters corresponding with numbers
+
+
+function owassoRams(n){
+  var a = [];
+  for(i=1;i<n+1;i++){
+    if(i%3 == 0 || i%5 == 0){
+      if(i%3 == 0 && i%5 == 0){
+    a.push("OwassoRams");
+    }
+    if(i%3 == 0 && i % 5 != 0){
+      a.push("Owasso");
+    }
+    if(i%5 == 0 && i%3 != 0){
+      a.push("Rams");
+    }
+    }else{
+      a.push(i);
+    }
+  }
+  return a;
+}
+
+var output = owassoRams(15);
+console.log(output);
