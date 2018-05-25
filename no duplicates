@@ -1,0 +1,38 @@
+// detects duplicates and eliminates them
+
+
+
+function noDuplicates(phrase){
+  var words = phrase.split(" ").sort();
+  for(i=0;i<words.length;i++) {
+    if (words[i] == words[i+1]) {
+      return("no");
+    }
+  }
+  return ("yes");
+}
+var output = noDuplicates("IN THE RAIN AND SNOW");
+console.log(output);
+function loneSum(a,b,c){
+  if (a != b && b != c && a != c){
+    return a + b + c;
+  }
+  else if (a == b && b != c){
+    return c;
+  }
+  else if (a == c && b != c && b != a){
+    return b;
+  }
+  else if (a == b && b == c && a == c){
+    return 0;
+  }
+  else if (a != b && b == c && a != c){
+    return a;
+  }
+  else if (a == b && b != c && a != c){
+    return b + c;
+  }
+}
+loneSum(1, 2, 3); // → 6
+loneSum(3, 2, 3); // → 2
+loneSum(3, 3, 3); // → 0
