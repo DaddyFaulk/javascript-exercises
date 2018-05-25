@@ -1,0 +1,9 @@
+// times table
+
+
+for(i=0;i<11;i++){
+  console.log(i+' TIMES TABLE');
+  for(l=0;l<11;l++){
+     console.log(i+" x "+l+" = "+i*l +'\n')
+  }
+}
