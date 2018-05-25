@@ -1,0 +1,16 @@
+// used to factor in code
+
+
+function computeFactorialOfN(n) {
+  var factorial = 1;
+  var index = n;
+  for(var i = index ; i > 0 ; i--){
+    factorial = i * factorial;
+  }
+  return factorial;
+}
+var output = computeFactorialOfN(3);
+//console.log(output); // --> 6
+
+// var output = computeFactorialOfN(4);
+// console.log(output); // --> 24
