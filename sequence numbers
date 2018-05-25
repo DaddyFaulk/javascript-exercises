@@ -1,0 +1,14 @@
+// prints numbers leading up to given number
+
+
+function computeSummationToN(n) {
+  var computedTotal = 0;
+  for(var i = 1; i < n + 1; i++){
+    computedTotal += i;
+  }
+  // returns the total 
+  return computedTotal;
+}
+// adds the variable of computing
+var output = computeSummationToN(6);
+console.log(output); // --> 21
