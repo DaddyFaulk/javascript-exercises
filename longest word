@@ -1,0 +1,10 @@
+// returns longest word in an array
+
+
+function getLongestWordOfMixedElements(arr) {
+  return arr
+    .filter(item => typeof item === 'string')
+    .reduce((longest, str) => str.length > longest.length ? str : longest, '');
+}
+
+console.log(getLongestWordOfMixedElements([3, 'wow', 5, 'up', 3, 1]));
