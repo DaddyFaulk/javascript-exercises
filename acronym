@@ -1,0 +1,12 @@
+// used to turn array into acronym
+
+
+function acronym(text) {
+  return text
+    .split(/\s/)
+    .reduce(function(accumulator, word) {
+      return accumulator + word.charAt(0);
+    }, '');
+}
+
+console.log(acronym('Portable Network Graphics'));
