@@ -1,0 +1,14 @@
+// incrementing by 1
+
+
+
+function printStars()
+{
+    var n = Number(prompt("Give Number of Starz Plez:","0.."));
+    for (i = 0; i < n; i++)
+    {
+        document.write("*");
+    }
+}
+
+printStars();
